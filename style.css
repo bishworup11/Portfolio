@@ -48,6 +48,15 @@ html {
    
 }
 
+.log {
+    padding: 1px;
+   
+}
+.log:hover {
+    background: #cecece;
+   
+}
+
 .navbar-style {
    
     height: 55px;
@@ -120,6 +129,28 @@ a {
     height: 20px;
     width: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-style {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-item,
+    .button {
+        margin: 5px 0;
+    }
+    .navbar-style {
+        height: auto;
+    }
+}
+
 /* end first page */
 
 /* start about */
@@ -148,8 +179,8 @@ a {
 }
 
 .flex-container-about figure {
-    border-radius: 10px;
-    width: 500px;
+    border-radius: 5%;
+    width: 50%;
     overflow: hidden;
 }
 
