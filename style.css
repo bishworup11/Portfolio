@@ -184,6 +184,24 @@ a {
     overflow: hidden;
 }
 
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    #about {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .flex-container-about {
+        flex-direction: column;
+    }
+    
+    .flex-container-about article,
+    .flex-container-about figure {
+        width: 100%;
+    }
+}
+
+
 
 /* end aobut */
 
