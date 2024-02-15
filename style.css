@@ -204,9 +204,9 @@ a {
 
 /* experience div2 and ul2 */
 .experience-div2{
-    flex: 70%;
+    flex: 30%;
     padding: 10px;
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -219,12 +219,14 @@ a {
   }
 
   .experience-ul2{
-    flex: 30%;
+    flex: 70%;
     /* padding: 10px; */
     padding-left: 25px;
     padding-top: 10px;
+    text-align: left;
 
     
 }
 
 
+/* end experience */
