@@ -197,8 +197,7 @@ a {
     
     .flex-container-about article,
     .flex-container-about figure {
-        width: 50%;
-        height: 50%;
+        width: 100%;
         
     }
 }
