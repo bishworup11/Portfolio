@@ -274,6 +274,25 @@ a {
     
 }
 
+@media screen and (max-width: 768px) {
+    .experience-flex {
+        flex-direction: column;
+    }
+
+    .vl,
+    .vl2 {
+        display: none;
+    }
+
+    .experience-div1,
+    .experience-div2,
+    .experience-ul1,
+    .experience-ul2 {
+        flex: 100%;
+        text-align: center;
+    }
+}
+
 
 /* end experience */
 
@@ -318,6 +337,25 @@ a {
    
   }
 
+  /* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .feature-project-flex {
+        flex-direction: column;
+    }
+
+    .feature-project-text {
+        width: 100%; /* Set width to 100% for full width on smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+        margin-left: 0; /* Remove left margin */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .box {
+        width: 100%; /* Set width to 100% for full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for spacing on smaller screens */
+    }
+}
+
 
 
 /* other project */
@@ -357,7 +395,18 @@ a {
     padding: 10px;
     margin: 10px;
   }
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
   
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+  }
  
   
 
@@ -385,4 +434,11 @@ a {
     margin-right: 5px;
     margin-left: 5px;
 
+}
+
+@media screen and (max-width: 768px) {
+    .contact-style {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
