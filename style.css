@@ -355,7 +355,7 @@ a {
     width: 10px ;
     height:300px;
     margin-left: 300px;
-    /* position: absolute; */
+     /* position: absolute;  */
     
 } 
 
@@ -371,52 +371,72 @@ a {
    
   }
 
+  .row1 {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Create four equal columns */
+  .column1 {
+    display: flex;
+    flex-direction: row;
+    flex: 35%;
+    height: 25%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+
   /* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .feature-project-flex {
-        flex-direction: column;
-    }
-
-    .feature-project-text {
-        width: 100%; /* Set width to 100% for full width on smaller screens */
-        text-align: center; /* Center align text on smaller screens */
-        margin-left: 0; /* Remove left margin */
-        padding-right: 0; /* Remove right padding */
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-    }
-
-    .box {
-        width: 100%; /* Set width to 100% for full width on smaller screens */
-        margin: 10px 0; /* Adjust margin for spacing on smaller screens */
-    }
-}
-
 @media screen and (max-width: 568px) {
     .feature-project-flex {
         flex-direction: column;
     }
-    
+
     .feature-project-text {
         width: 100%; /* Set width to 100% for full width on smaller screens */
         text-align: center; /* Center align text on smaller screens */
         margin-left: 0; /* Remove left margin */
         padding-right: 0; /* Remove right padding */
-        padding-top: 10px;
+        padding-top: 40px;
         padding-bottom: 40px;
-        /* margin-top: 0px;
-        margin-bottom: 0px; */
+       
 
+    }
+
+    .mm{
+        margin-bottom: 100px;
     }
 
     .box {
         width: 100%; /* Set width to 100% for full width on smaller screens */
         margin: 20px 0; /* Adjust margin for spacing on smaller screens */
-        margin-top: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
+
+    .row1 {
+        display: flex; 
+        flex-wrap: wrap;
+        padding: 10px;
+        flex-direction: column;
+      }
+      
+      /* Create four equal columns */
+      .column1 {
+        display: flex;
+        flex-direction: column;
+        flex: 35%;
+        height: auto;
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+      }
+
+    
 }
 
 
