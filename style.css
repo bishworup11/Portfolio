@@ -48,7 +48,7 @@ html {
 }
 
 .displayNone{
-    display:none ;
+    display:flex ;
 }
 
 .flex-container1{
@@ -151,12 +151,16 @@ a {
     } 
 }  */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 950px) {
     .flex-container {
         flex-direction: column;
         align-items: flex-start;
         
     }
+    .displayNone{
+        display:none ;
+    }
+    
     .nav-item,
     .button {
         margin: 5px 0;
@@ -171,6 +175,10 @@ a {
     .intro
     {
         padding-top: 25px;
+    }
+
+    .displayNone{
+        display:none ;
     }
 }
 
