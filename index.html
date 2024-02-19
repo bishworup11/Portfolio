@@ -18,7 +18,7 @@
             </a>
         </div>
         <nav>
-            <ul class="flex-container">
+            <ul class="flex-container displayNone">
 
                 <li class=" nav-item">
                     <a href="#about" title="about"> About</a>
@@ -37,11 +37,13 @@
 
             </ul>
         </nav>
-        <div class="flex-container">
+        <div class="flex-container"  >
+            <span  class="button displayNone"><a href="#">Resume</a></span>
+            <span class="button displayNone"><a href="#">Hire Me</a></span>
 
-            <span class="button"><a href="#">Resume</a></span>
-            <span class="button"><a href="#">Hire Me</a></span>
+            <span onclick="ClickNavbar()" class=" navbarhide" style="padding:px;"> <img height="40px" src="img/navbar1.png" alt="hide" /></span>
         </div>
+   
     </header>
     <!-- head end -->
     <!-- start Intro -->
@@ -160,7 +162,7 @@
                     <span>CSS</span>
                     <span>JS</span>
                 </div>
-                <div>
+                <div >
                     <img  width="25px" src="./img/github.png" />
                     <a href="#"><img  width="25px" height="25px" src="./img/external.png" /> </a>
                 </div>
@@ -172,7 +174,7 @@
 
             <div style="width: 50%;height: 200px;" class="features-project-text">
 
-                <h3>Project Name</h3>
+                <h3 style="margin-top: 10px; margin-bottom: 10px;">Project Name</h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
                     architecto debitis expedita, necessitatibus nulla tempore
@@ -317,7 +319,9 @@
 
 
     </div>
-   
+    <!-- seeMOre -->
+   <!-- style="display: flex ;justify-content: center;"  <label id="showMore" style="padding-top: 10px;">Show More</label> -->
+     <span onclick="cl()" class="seeMore">  <label id="showMore" style="padding-top: 10px;">Show More</label> <img id="img1" height="40px" src="img/viewmore.png" alt="hide" /> </span>
 
 
     <!-- Contact start-->
@@ -331,8 +335,23 @@
             quia quidem unde et id tempora aspernatur! Totam commodi obcaecati atque
             suscipit.
         </p>
-        <div style="margin-top: 80px; margin-bottom: 70px ;">
-            <span style="padding: 15px;" class="button"><a href="mailto:bishworupmollik@gmail.com">Write Message</a></span>
+
+          <div style="margin-top: 80px; margin-bottom: 70px ;">
+            <form class="contact-form">
+                <label> Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your Full name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Your email." id="contact-send-email" required />
+
+                <label>Messege</label>
+                <textarea placeholder="Your message." id="contact-send-messege" required></textarea>
+             
+        
+              </form>
+        
+              <span onclick="ContactForm()" class="write-messege-button-style"><a href="#contact"
+                  id="contact-write-message">Write Message</a></span>
         </div>
         <div style="margin: 10px">
             <a href="#"><img src="./img/github.png" /> </a>
@@ -342,5 +361,6 @@
     </div>
     <!-- Contact end-->
 </body>
+<script src="scripts.js"></script>
 
 </html>

@@ -45,6 +45,18 @@ html {
     height: 100%;
     align-items: center;
     
+}
+
+.displayNone{
+    display:none ;
+}
+
+.flex-container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    align-items: right;    
    
 }
 
@@ -108,6 +120,8 @@ a {
     border: 2px solid rgb(93, 91, 91);
 }
 
+/* end header */
+
 /* Intro style */
 .intro{
     margin-top: 300px;
@@ -130,24 +144,33 @@ a {
     width: 20px;
 }
 
-@media screen and (max-width: 768px) {
+ /* @media screen and (max-width: 768px) {
     .navbar-style {
         padding-left: 5%;
         padding-right: 5%;
-    }
-}
+    } 
+}  */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
     .flex-container {
         flex-direction: column;
         align-items: flex-start;
+        
     }
     .nav-item,
     .button {
         margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+   
+
     }
     .navbar-style {
         height: auto;
+    }
+    .intro
+    {
+        padding-top: 25px;
     }
 }
 
@@ -185,6 +208,8 @@ a {
 }
 
 /* Media queries for responsiveness */
+
+
 @media screen and (max-width: 768px) {
     #about {
         padding-left: 10%;
@@ -349,6 +374,11 @@ a {
         text-align: center; /* Center align text on smaller screens */
         margin-left: 0; /* Remove left margin */
         padding-right: 0; /* Remove right padding */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
     }
 
     .box {
@@ -357,16 +387,45 @@ a {
     }
 }
 
+@media screen and (max-width: 568px) {
+    .feature-project-flex {
+        flex-direction: column;
+    }
+    
+    .feature-project-text {
+        width: 100%; /* Set width to 100% for full width on smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+        margin-left: 0; /* Remove left margin */
+        padding-right: 0; /* Remove right padding */
+        padding-top: 10px;
+        padding-bottom: 40px;
+        /* margin-top: 0px;
+        margin-bottom: 0px; */
+
+    }
+
+    .box {
+        width: 100%; /* Set width to 100% for full width on smaller screens */
+        margin: 20px 0; /* Adjust margin for spacing on smaller screens */
+        margin-top: 80px;
+    }
+}
+
+
+
+
 
 
 /* other project */
 
 #other-project{
-    background-color: #eee9e9;
+    /* background-color: #eee9e9; */
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 15%;
     padding-right: 15%;
+     display: none; 
+   
 
   }
 
@@ -381,9 +440,9 @@ a {
    
   }
 
-  /* Container for flexboxes */
+
 .row {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     padding: 10px;
   }
@@ -396,6 +455,30 @@ a {
     padding: 10px;
     margin: 10px;
   }
+
+  .seeMore{
+    /* background-color: #eee9e9; */
+    display: flex ;
+    justify-content: center;
+    
+  }
+  #showMore{
+    border: 2px solid rgb(188, 182, 182);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 35px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+  }
+
+  #showMore:hover {
+    border: 2px solid rgb(93, 91, 91);
+    background-color: #eee9e9;
+}
+
+
+
   @media screen and (max-width: 992px) {
     .column {
       flex: 50%;
@@ -415,7 +498,7 @@ a {
 
 /* contract */
 .contact-style{
-
+    background-color: #eee9e9;
     margin-top: 100px;
     text-align: center;
     margin-bottom: 30px;
@@ -436,6 +519,45 @@ a {
     margin-left: 5px;
 
 }
+/* form */
+.contact-form{
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: none; 
+
+}
+
+.contact-write-messege-form>input,select,textarea{
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.write-messege-button-style {
+  
+    border: 2px solid rgb(188, 182, 182);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+   
+}
+
+.write-messege-button-style:hover {
+    background: #cecece;
+    border: 1px solid rgb(193, 186, 186);
+     /* Adjust border-radius for smoother rounded corners */
+    border-radius: 5px;
+    height: 25px;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 5px;
+   
+}
+
 
 @media screen and (max-width: 768px) {
     .contact-style {
