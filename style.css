@@ -332,7 +332,7 @@ a {
 
 /* feature project */
 
-  #feature-project{
+#feature-project{
     /* background-color: #e6e6e6; */
     padding-top: 100px;
     padding-bottom: 100px;
@@ -344,16 +344,14 @@ a {
   .feature-project-flex{
     display: flex;
     margin-top: 30px;
-    /* position: relative; */
-    /* Position relative to contain absolutely positioned elements */
-    height: auto;
+   
 }
 .feature-project-text{
+    width: 50%;
+    height: 200px;
     padding: 30px;
     padding-right: 40px;
-    text-align: right;
-    width: 10px ;
-    height:300px;
+   
     margin-left: 300px;
     /* position: absolute; */
     
@@ -368,6 +366,8 @@ a {
     padding: 30px;
     margin: 10px;
     border-radius: 10px;
+    width: 50%;
+    height: 200px;
    
   }
 
@@ -405,21 +405,21 @@ a {
         text-align: center; /* Center align text on smaller screens */
         margin-left: 0; /* Remove left margin */
         padding-right: 0; /* Remove right padding */
-        padding-top: 10px;
-        padding-bottom: 40px;
-        /* margin-top: 0px;
-        margin-bottom: 0px; */
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+        
+
 
     }
 
     .box {
         width: 100%; /* Set width to 100% for full width on smaller screens */
-        margin: 20px 0; /* Adjust margin for spacing on smaller screens */
-        margin-top: 80px;
+        margin: 0px 0; /* Adjust margin for spacing on smaller screens */
+        margin-top: 10px;
+       
     }
+    
 }
-
-
 
 
 
@@ -534,14 +534,32 @@ a {
     margin-top: 10px;
     margin-bottom: 20px;
     display: none; 
+}
+
+#fname{
+    
+    height: 30px;
+    /* width: 50%; */
+}
+
+
+#contact-send-email{
+    height: 30px;
+    /* width: 50%; */
+   
+}
+
+#contact-send-messege{
+    height: 100px;
+    /* width: 50%; */
 
 }
 
-.contact-write-messege-form>input,select,textarea{
+/* .contact-write-messege-form>input,select,textarea{
     height: 30px;
     margin-bottom: 10px;
     padding-left: 10px;
-}
+} */
 .write-messege-button-style {
   
     border: 2px solid rgb(188, 182, 182);
